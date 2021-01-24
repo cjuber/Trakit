@@ -1,0 +1,47 @@
+import React, { Component } from 'react'
+
+export default class Login extends Component {
+    constructor(){
+        super()
+        this.state={
+            toggle: false
+        }
+    }
+    toggleTrue = () =>{
+            this.setState({
+                toggle:true
+            })
+    }
+    toggleFalse = () =>{
+            this.setState({
+                toggle:false
+            })
+    }
+    login = () => {
+        this.history.push('/home')
+    }
+    render() {
+        return (
+            <div className='auth'>
+                
+            <div className='login'>
+               
+                <div className='authBox'>
+                    <div className='tabs'>
+                    <h1 className={this.state.toggle ? ('tabButtonI') : ('tabButtonA')} onClick={this.toggleFalse}>Log in</h1>
+                    <h1 className={this.state.toggle ? ('tabButtonA') : ('tabButtonI')} onClick={this.toggleTrue}>Register</h1>
+                    </div>
+                    <input className={this.state.toggle ? ('inputNo') : ('inputs')}  name='username' placeholder='Username'></input>
+                    <input className={this.state.toggle ? ('inputNo') : ('inputs')}  type='password' name='password' placeholder='Password'></input>
+
+                    <input className={this.state.toggle ? ('inputs') : ('inputNo')} name='username' placeholder='Email'></input>
+                    <input className={this.state.toggle ? ('inputs') : ('inputNo')} name='username' placeholder='Username'></input>
+                    <input className={this.state.toggle ? ('inputs') : ('inputNo')} type='password' name='password' placeholder='Password'></input>
+
+                    <button onClick={this.state.login} >{this.state.toggle ? ('Register') : ('Log In')}</button>
+                </div>
+            </div>
+            </div>
+        )
+    }
+}

@@ -1,0 +1,185 @@
+/* Begin Header -----------------------------------------------------------------------------------------------------------------------*/ 
+header{
+    width: 100%;
+    height: 7.8vh;
+    background: $color2;
+    display: flex;
+    justify-content: space-between;
+    
+    .title{
+        margin-top: 1.3vh;
+        height:5vh;
+        width: 25vw;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: right;
+        margin-left: 2%;
+        border: 1px solid $color5;
+    }
+    
+    h1{
+        color: $color4;
+        margin-right: 5px;
+        font-family: $font;
+        font-size: 30px;
+        
+    }
+    h3{
+        color: $color;
+        font-family: $font;
+        font-size: 20px;
+        margin-left: 90%;
+    }
+    .account{
+        margin-right: 2%;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        cursor: pointer;
+    }
+    button{
+        width: 50px;
+        height: 50px;
+        border-radius: 50px;
+        
+        cursor: pointer;
+        outline: 1px dashed transparent;
+    }
+    .caret{
+        
+        height: 20px;
+        
+    }
+    h2{
+        font-family: $font;
+        font-size: 20px;
+        color: $color;
+    }
+}
+
+/*  End Header -----------------------------------------------------------------------------------------------------------------------*/ 
+/* Begin Auth -----------------------------------------------------------------------------------------------------------------------*/ 
+.login{
+   
+    // perspective:800px;
+    height: 92.2vh;
+    margin:0;
+    overflow: hidden;
+    font-family: $font;
+    background: $color4;
+    display: flex;
+    justify-content: center;
+    
+    
+    .authBox{
+        height: 300px;
+        width: 240px;
+        background: $color2;
+        padding:100px 40px 40px 40px;
+        margin-top: 20%;
+        box-shadow: 3px 3px 15px  $color2;
+        border-radius: 10px;
+        .tabs{
+            display: flex;
+        }
+        .tabButtonA{
+            color: $color4;
+            height:25px;
+            text-align:left;
+            font-size:16px;
+            margin-right: 25px;
+            transition: all 0.5s ease;
+            border-bottom: 1px solid $color5;
+            
+        }
+        .tabButtonI{
+            color: $color3;
+            height:60px;
+            text-align:left;
+            font-size:16px;
+            margin-right: 25px;
+            cursor: pointer;
+            
+        }
+        .inputs{
+            height: 20px;
+            width: 100%;
+            color: $color4;
+            background: $color2;
+            border-top: none;
+            border-bottom: 1px solid $color5;
+            border-right: none;
+            border-left: none;
+            margin-bottom: 2rem;
+            
+        }
+        .inputNo{
+            display: none;
+        }
+        input:focus {
+            outline: none;
+            transform: scale(1.1);
+            transition: transform .15s ease;
+        }
+       
+        input::placeholder{
+            color: $color3;
+        }
+        button{
+            margin-top: 2rem;
+            width: 150px;
+            height: 40px;
+            border-radius: 50px;
+            background: none;
+            border: 2px solid $color3;
+            color: $color3;
+            outline: 1px dashed transparent;
+        }
+        button:active{
+            border: 3px solid $color5 * 1.5;
+            color: $color4;
+        }
+    }
+    
+    
+}
+/*  End Auth -----------------------------------------------------------------------------------------------------------------------*/ 
+/*  Begin Home -----------------------------------------------------------------------------------------------------------------------*/ 
+.areaBg{
+    height: 92.2vh;
+    overflow: hidden;
+    font-family: $font;
+    background: $color4;
+    display: flex;
+    flex-direction: column;
+    
+    
+
+    .search{
+        margin: 3% 0;
+        height: 20px;
+        width: 50%;
+        align-self: center;
+        
+        
+    }
+
+    h1{
+        margin-top: 5%;
+        text-align: center;
+    }
+
+
+    .areaBox{
+        height: 300px;
+        width: 240px;
+        background: $color2;
+        padding:100px 40px 40px 40px;
+        margin-top: 3%;
+        margin-left: 11.5vw;
+        box-shadow: 3px 3px 15px  $color2;
+        border-radius: 10px;
+    }
+}
+/*  End Home -----------------------------------------------------------------------------------------------------------------------*/ 
