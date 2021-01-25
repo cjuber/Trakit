@@ -317,20 +317,52 @@ header h2 {
 }
 
 .areaBg h1 {
-  margin-top: 5%;
+  margin-top: 2%;
   text-align: center;
 }
 
 .areaBg .areaBox {
-  height: 300px;
-  width: 240px;
+  height: 450px;
+  width: 320px;
   background: #001E47;
-  padding: 100px 40px 40px 40px;
-  margin-top: 3%;
+  margin-top: 10%;
   margin-left: 11.5vw;
   -webkit-box-shadow: 3px 3px 15px #001E47;
           box-shadow: 3px 3px 15px #001E47;
   border-radius: 10px;
+}
+
+.areaBg .areaBox .title {
+  width: 33.33%;
+  margin: 5% 33.33%;
+  color: #fff;
+  border-bottom: 1px solid #FF5757;
+}
+
+.areaBg .areaBox .areas {
+  width: 27%;
+  margin: 10% 20% 0 10%;
+  color: #fff;
+  border-bottom: 1px solid #FF5757;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+.areaBg .areaBox .items {
+  width: 27%;
+  margin: 10%;
+  color: #fff;
+  border-bottom: 1px solid #FF5757;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
 }
 
 /*  End Home -----------------------------------------------------------------------------------------------------------------------*/
