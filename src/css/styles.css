@@ -316,7 +316,7 @@ header h2 {
       align-self: center;
 }
 
-.areaBg h1 {
+.areaBg .listAll {
   margin-top: 2%;
   text-align: center;
 }
@@ -334,12 +334,27 @@ header h2 {
 
 .areaBg .areaBox .title {
   width: 33.33%;
+  max-height: 10%;
   margin: 5% 33.33%;
   color: #fff;
   border-bottom: 1px solid #FF5757;
+  text-align: center;
+  padding-bottom: 2%;
 }
 
 .areaBg .areaBox .areas {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 33%;
+  max-height: 30%;
+}
+
+.areaBg .areaBox .areas .areasTitle {
   width: 27%;
   margin: 10% 20% 0 10%;
   color: #fff;
@@ -350,11 +365,33 @@ header h2 {
   -webkit-box-pack: space-evenly;
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
+  padding-bottom: 2%;
+}
+
+.areaBg .areaBox .areas .areaList {
+  color: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-top: 5%;
+  padding: 0 0 5% 15%;
+}
+
+.areaBg .areaBox .areas .areaList h1 {
+  padding: 1%;
 }
 
 .areaBg .areaBox .items {
+  height: 50%;
+}
+
+.areaBg .areaBox .items .itemsTitle {
   width: 27%;
-  margin: 10%;
+  margin: 10% 20% 0 10%;
   color: #fff;
   border-bottom: 1px solid #FF5757;
   display: -webkit-box;
@@ -363,6 +400,33 @@ header h2 {
   -webkit-box-pack: space-evenly;
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
+  padding-bottom: 2%;
+}
+
+.areaBg .areaBox .items .itemList {
+  max-height: 60%;
+  color: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-top: 5%;
+  padding: 0 0 5% 15%;
+  -ms-flex-flow: row wrap;
+      flex-flow: row wrap;
+}
+
+.areaBg .areaBox .items .itemList h1 {
+  padding: 2%;
+}
+
+.areaBg .areaBox .seeMore {
+  margin-top: 5%;
+  color: #fff;
+  text-align: center;
 }
 
 /*  End Home -----------------------------------------------------------------------------------------------------------------------*/
